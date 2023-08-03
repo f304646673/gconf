@@ -7,19 +7,19 @@ pro:
     url: pro-read.com
 pre:
   write_pool:
-    url: pro-write.com
+    url: pre-write.com
   read_pool:
-    url: pro-read.com
+    url: pre-read.com
 test:
   write_pool:
-    url: pro-write.com
+    url: test-write.com
   read_pool:
-    url: pro-read.com
+    url: test-read.com
 dev:
   write_pool:
-    url: pro-write.com
+    url: dev-write.com
   read_pool:
-    url: pro-read.com
+    url: dev-read.com
 default:
   write_pool:
     port: 5432
