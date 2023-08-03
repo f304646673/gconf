@@ -23,7 +23,6 @@ const (
 )
 
 func LoadConfigFromFile(filePath string, env string) (string, error) {
-	// todo env需要判断是否合法
 	data, err := os.ReadFile(filePath)
 	if err != nil {
 		return "", err
