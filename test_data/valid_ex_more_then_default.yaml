@@ -1,8 +1,8 @@
-Pro:
+pro:
   key1: value_Pro
   map_struct:
     key1: value_Pro_in_map_struct
     map_ex:
       key1: value_Pro_in_map_ex
-Default:
+default:
   key1: value_Default

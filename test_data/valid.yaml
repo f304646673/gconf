@@ -1,26 +1,26 @@
 version: 1
-Pro:
+pro:
   write_pool:
     url: pro-write.com
     port: 11
   read_pool:
     url: pro-read.com
-Pre:
+pre:
   write_pool:
     url: pro-write.com
   read_pool:
     url: pro-read.com
-Test:
+test:
   write_pool:
     url: pro-write.com
   read_pool:
     url: pro-read.com
-Dev:
+dev:
   write_pool:
     url: pro-write.com
   read_pool:
     url: pro-read.com
-Default:
+default:
   write_pool:
     port: 5432
     user_name: write_pool_user_name

@@ -44,7 +44,7 @@ func TestLoadConfigFromFile(t *testing.T) {
 		_, err := LoadConfigFromFile(filePath, "not_exist")
 		assert.NotNil(t, err)
 
-		confs, err := LoadConfigFromFile(filePath, "Pro")
+		confs, err := LoadConfigFromFile(filePath, "pro")
 		assert.Nil(t, err)
 
 		var config PostgresSqlConnConfigs
@@ -56,35 +56,35 @@ func TestLoadConfigFromFile(t *testing.T) {
 		t.Parallel()
 		fileName := strings.Split(t.Name(), "/")[1]
 		filePath := path.Join(confDirPath, fileName)
-		_, err := LoadConfigFromFile(filePath, "Pro")
+		_, err := LoadConfigFromFile(filePath, "pro")
 		assert.NotNil(t, err)
 	})
 
 	t.Run("valid_ex_is_nil", func(t *testing.T) {
 		confFileName := "valid_ex_is_nil.yaml"
 		confFilePath := path.Join(confDirPath, confFileName)
-		_, err := LoadConfigFromFile(confFilePath, "Pro")
+		_, err := LoadConfigFromFile(confFilePath, "pro")
 		assert.NoError(t, err)
 	})
 
 	t.Run("valid_default_is_nil", func(t *testing.T) {
 		confFileName := "valid_default_is_nil.yaml"
 		confFilePath := path.Join(confDirPath, confFileName)
-		_, err := LoadConfigFromFile(confFilePath, "Pro")
+		_, err := LoadConfigFromFile(confFilePath, "pro")
 		assert.NoError(t, err)
 	})
 
 	t.Run("invalid_empty_file", func(t *testing.T) {
 		confFileName := "invalid_empty_file.yaml"
 		confFilePath := path.Join(confDirPath, confFileName)
-		_, err := LoadConfigFromFile(confFilePath, "Pro")
+		_, err := LoadConfigFromFile(confFilePath, "pro")
 		assert.NotNil(t, err)
 	})
 
 	t.Run("valid_empty_file", func(t *testing.T) {
 		confFileName := "valid_ex_more_then_default.yaml"
 		confFilePath := path.Join(confDirPath, confFileName)
-		_, err := LoadConfigFromFile(confFilePath, "Pro")
+		_, err := LoadConfigFromFile(confFilePath, "pro")
 		assert.NoError(t, err)
 	})
 }
