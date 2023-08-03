@@ -1,0 +1,45 @@
+version: 1
+Pro:
+  write_pool:
+    url: pro-write.com
+    port: 11
+  read_pool:
+    url: pro-read.com
+Pre:
+  write_pool:
+    url: pro-write.com
+  read_pool:
+    url: pro-read.com
+Test:
+  write_pool:
+    url: pro-write.com
+  read_pool:
+    url: pro-read.com
+Dev:
+  write_pool:
+    url: pro-write.com
+  read_pool:
+    url: pro-read.com
+Default:
+  write_pool:
+    port: 5432
+    user_name: write_pool_user_name
+    password: write_pool_password
+    dbname: dbname
+    max_idle_Conns: 1
+    max_open_conns: 1
+    conn_max_lifetime_seconds: 3
+    user:
+      username: un
+      password: pwd
+  read_pool:
+    port: 5432
+    user_name: read_pool_user_name
+    password: read_pool_password
+    dbname: dbname
+    max_idle_Conns: 1
+    max_open_conns: 1
+    conn_max_lifetime_seconds: 3
+    user:
+      username: un
+      password: pwd

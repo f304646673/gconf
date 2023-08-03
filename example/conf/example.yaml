@@ -1,0 +1,55 @@
+version: 1
+pro:
+  string_v: string_v_pro
+  sub_config:
+        - string_list:
+            - string_list_pro_1
+            - string_list_pro_2
+          int_list:
+            - 3
+            - 4
+          float_list:
+            - 5.0
+            - 6.0
+          bool_list:
+            - false
+            - true
+pre:
+  string_v: string_v_pre
+  int_v: 2
+dev:
+  string_v: string_v_dev
+  float_v: 2.0
+test:
+  string_v: string_v_test
+  bool_v: false
+default:
+    string_v: string_v_default
+    int_v: 1
+    float_v: 1.0
+    bool_v: true
+    sub_config:
+        - string_list:
+            - string_list_1
+            - string_list_2
+          int_list:
+            - 1
+            - 2
+          float_list:
+            - 1.0
+            - 2.0
+          bool_list:
+            - true
+            - false
+        - string_list:
+            - string_list_3
+            - string_list_4
+          int_list:
+            - 3
+            - 4
+          float_list:
+            - 3.0
+            - 4.0
+          bool_list:
+            - false
+            - true
